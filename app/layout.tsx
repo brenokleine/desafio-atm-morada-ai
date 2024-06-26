@@ -6,8 +6,8 @@ import "@/public/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Desafio Atm",
-  description: "Desafio Atm",
+  title: "Desafio Caixa Eletrônico",
+  description: "Desafio Caixa Eletrônico",
 };
 
 export default function RootLayout({
@@ -17,6 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full h-screen">
+        <link
+          rel="icon"
+          href="/images/icon.svg"
+        />
       <body className={`${inter.className} min-h-full h-screen h-full`}>
         {children}
       </body>
