@@ -8,11 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        moradaBlack: "#212121",
+        moradaOrange: "#ce4313",
       },
+    },
+    screens: {
+      'xs': '450px', // Extra small screens
+      'sm': '640px', // Small screens
+      'md': '784px', // Medium screens
+      'lg': '1024px', // Large screens
+      'xl': '1280px', // Extra large screens
+      'xxl': '1400px', // Extra extra large
     },
   },
   plugins: [],
