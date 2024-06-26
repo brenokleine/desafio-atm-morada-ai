@@ -16,6 +16,11 @@ Clone o repositório com o seguinte comando:
 git clone https://github.com/brenokleine/desafio-atm-morada-ai
 ```
 ## Rodar servidor de desenvolvimento:
+Primeiro, baixe as dependencias com o comando:
+```
+npm install
+```
+
 Para rodar o servidor de desenvolvimento, utilize o comando abaixo:
 ```bash
 npm run dev
