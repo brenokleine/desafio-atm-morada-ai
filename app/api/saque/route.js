@@ -1,5 +1,4 @@
 
-import { NextApiRequest, NextApiResponse } from 'next';
 import { saqueAtm } from "@/public/utils/saqueAtm";
 
 export const POST = async (req, res) => {

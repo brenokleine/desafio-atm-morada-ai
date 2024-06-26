@@ -32,3 +32,10 @@ Utilize a aplicação.
 
 ## Testes
 Os testes unitários se encontram em `./__tests__`
+
+### Rodar testes:
+Para rodar os testes utilize:
+
+```
+npm run test
+```

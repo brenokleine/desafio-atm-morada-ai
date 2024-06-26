@@ -28,6 +28,20 @@ describe('Teste algoritmo saqueAtm', () => {
     
     })
 
+    it('should correctly handle number ending in 8', () => {
+        expect(saqueAtm(98)).toEqual(
+            {
+                100: 0,
+                50: 1,
+                20: 2,
+                10: 0,
+                5: 0,
+                2: 4
+            }
+        );
+
+    })
+
     it('should fail to return correct bills for number ending in 1', () => {
         expect(saqueAtm(381)).toEqual(
             { 
