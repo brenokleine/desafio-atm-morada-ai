@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio Técnico Morada.ai: Caixa Eletrônico API
 
-## Getting Started
+## Descrição
+Esta API simula o funcionamento de um caixa eletrônico. Mesmo não sendo necessário, foi implementada uma interface para realizar as requisições e ver suas respostas de maneira simples.
 
-First, run the development server:
+Ao receber um valor de saque desejado, retorna a quantidade de cédulas de cada valor necessárias para compor esse saque, utilizando a menor quantidade de cédulas possível. As cédulas consideradas são: 100, 50, 20, 10, 5 e 2.
 
+### Principais desafios:
+Os principais desafios foram implementar a lógica para que todos os possíveis cenários de valores estejam cobertos, para que o programa tenha uma resposta adequada a todas as adversidades. Como por exemplo, input de dados inválidos ou uma reorganização de cédulas para atender ao pedido de saque do cliente de maneira mais eficiente possível.
+
+# Instruções de Execução
+
+## Clonar Repositório:
+Clone o repositório com o seguinte comando:
+```bash
+git clone https://github.com/brenokleine/desafio-atm-morada-ai
+```
+## Rodar servidor de desenvolvimento:
+Para rodar o servidor de desenvolvimento, utilize o comando abaixo:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Utilize a aplicação.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Testes
+Os testes unitários se encontram em `./__tests__`
