@@ -31,7 +31,7 @@ npm run dev
 Utilize a aplicação.
 
 ## Testes
-Os testes unitários se encontram em `./__tests__`
+Os testes se encontram em `./__tests__`
 
 ### Rodar testes:
 Para rodar os testes utilize:
